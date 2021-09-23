@@ -5,9 +5,9 @@
 * Log'o įrašymą į sql db (repository patternas nereikalingas) 
 * API konfigūracijoje nustatmas koks log įrašymo mechanizmas (1,2,3 ar 4) bus naudojamas 
 * Turi būti realizuota api mechanizmai: 
-*  a) žinutės įrašymo, 
-*  b) žinučių sąrašo skaitymo, 
-*  c) vienos žinutės skaitymo.   
+   a) žinutės įrašymo, 
+   b) žinučių sąrašo skaitymo, 
+   c) vienos žinutės skaitymo.   
 *  Darbas vykdomas per GitHub taip, kad matytųsi kiekvieno asmens įdirbis (dirbama skirtingose šakose, o rezultatas merdžinamas į master) 
 *  Turi būti realizuotas tik vienas endpointas "api/logs" * Naudoti OOP architektūros principus 
 *  Naudoti SOLID architektūros principus 
