@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj": {}
+    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj": {
+    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj",
-        "projectName": "API",
-        "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj",
+        "projectName": "Api",
+        "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj",
         "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\obj\\",
         "projectStyle": "PackageReference",
