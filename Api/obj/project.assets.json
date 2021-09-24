@@ -75,6 +75,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Business.dll": {}
+        }
+      },
+      "Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Business": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.dll": {}
+        }
       }
     }
   },
@@ -185,10 +208,21 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Business/1.0.0": {
+      "type": "project",
+      "path": "../Business/Business.csproj",
+      "msbuildProject": "../Business/Business.csproj"
+    },
+    "Data/1.0.0": {
+      "type": "project",
+      "path": "../Data/Data.csproj",
+      "msbuildProject": "../Data/Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Data >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -198,9 +232,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj",
-      "projectName": "API",
-      "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj",
+      "projectName": "Api",
+      "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\Api.csproj",
       "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\API\\obj\\",
       "projectStyle": "PackageReference",
@@ -218,7 +252,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

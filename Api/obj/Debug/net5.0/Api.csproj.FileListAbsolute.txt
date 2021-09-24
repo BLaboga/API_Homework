@@ -27,3 +27,7 @@ C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\obj\Debug\net5.0\Api.dll
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\obj\Debug\net5.0\ref\Api.dll
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\obj\Debug\net5.0\Api.pdb
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\obj\Debug\net5.0\Api.genruntimeconfig.cache
+C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\bin\Debug\net5.0\Business.dll
+C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\bin\Debug\net5.0\Data.dll
+C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\bin\Debug\net5.0\Data.pdb
+C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\API\bin\Debug\net5.0\Business.pdb
