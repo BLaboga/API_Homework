@@ -1,0 +1,120 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\laura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\laura\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\laura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\laura\\Desktop\\Projects\\BAxVCS\\API_Homework\\Business\\Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
