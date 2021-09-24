@@ -9,3 +9,4 @@ C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\Business\obj\Debug\net5.0\Bu
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\Business\obj\Debug\net5.0\Business.dll
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\laura\Desktop\Projects\BAxVCS\API_Homework\Business\obj\Debug\net5.0\Business.csproj.AssemblyReference.cache
