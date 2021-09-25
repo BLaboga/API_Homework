@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Api.Services;
+using Business.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Api
 {
@@ -6,7 +8,7 @@ namespace Api
     {
         public static IServiceCollection CongigureDependencyInjection(this IServiceCollection services)
         {
-            //services.AddScoped<IObject, ActualObject>();
+            services.AddScoped<ILogStoreService, LogStoreService>();
 
             return services;
         }

@@ -1,5 +1,5 @@
-﻿using Business;
-using Business.Dto;
+﻿using Business.Dto;
+using Business.Interfaces;
 
 namespace Api.LogLocations
 {
@@ -7,7 +7,7 @@ namespace Api.LogLocations
     {
         public void Create(LogRequest request)
         {
-            // Tipo email request
+            // Tipo email this request
         }
     }
 }

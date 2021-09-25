@@ -1,12 +1,7 @@
-﻿using Api.LogLocations;
-using Business;
+﻿using Api.Services;
 using Business.Dto;
+using Business.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Api.Controllers
 {
@@ -14,65 +9,41 @@ namespace Api.Controllers
     [Route("[controller]")]
     public class LogController : ControllerBase
     {
-        public readonly ILogStoreLocation location;
+        public readonly ILogStoreService _logStoreService;
 
-        public LogController()
+        public LogController(ILogStoreService logStoreService)
         {
-            location = GetLogStoreLocation();
+            _logStoreService = logStoreService;
         }
 
         [HttpPost]
-        public ActionResult<LogDto> Create(LogRequest request)
+        public ActionResult<LogRequest> Create(LogRequest request)
         {
-            location.Create(request);
-            // Tik čia dar reiktų request.ConvertToLogDto() ar kažką tokio
-            return Created(nameof(Create), new LogDto());
+            _logStoreService.Create(request);
+            return Created(nameof(Create), request);
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<LogDto>> All()
+        public ActionResult<LogRequest> All()
         {
-            IReadableLogLocation readableLocation = location as IReadableLogLocation;
-
-            if (readableLocation == null)
-                return NotFound();
-            // Gal reiktų geresnio return tipo
-            // Lyg ir yra kažkoks unable to process request
-
-            return Ok(readableLocation.All());
-        }
-
-        [HttpGet("{key:int}")]
-        public ActionResult<LogDto> Get(int key)
-        {
-            IReadableLogLocation readableLocation = location as IReadableLogLocation;
-
-            if (readableLocation == null)
+            if (!_logStoreService.LocationIsReadable())
                 return NotFound();
             // Unable to process request
 
-            if (!readableLocation.Exists(key))
-                return NotFound();
-
-            return Ok(readableLocation.Get(key));
+            return _logStoreService.All();
         }
 
-        public static ILogStoreLocation GetLogStoreLocation()
+        [HttpGet("{key:int}")]
+        public ActionResult<LogDto> Get([FromRoute]int key)
         {
-            // Šitą dalį nuskaitom iš appsettings.json
-            int storeLocationSelection = 1;
+            if (!_logStoreService.LocationIsReadable())
+                return NotFound();
+            // Unable to process request
 
-            Dictionary<int, ILogStoreLocation> locations = new Dictionary<int, ILogStoreLocation>
-            {
-                { 1, new LogConsole() },
-                { 2, new LogEmail() },
-                { 3, new LogFile() },
-                { 4, new LogDb() }
-            };
+            if (!_logStoreService.Exists(key))
+                return NotFound();
 
-            ILogStoreLocation location = locations[storeLocationSelection];
-
-            return location;
+            return _logStoreService.Get(key);
         }
     }
 }

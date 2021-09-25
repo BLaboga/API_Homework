@@ -1,7 +1,6 @@
-﻿using Business;
-using Business.Dto;
+﻿using Business.Dto;
+using Business.Interfaces;
 using System;
-using System.Collections.Generic;
 
 namespace Api.LogLocations
 {
@@ -12,7 +11,7 @@ namespace Api.LogLocations
             throw new NotImplementedException();
         }
 
-        public IEnumerable<LogDto> All()
+        public LogRequest All()
         {
             throw new NotImplementedException();
         }

@@ -1,5 +1,5 @@
-﻿using Business;
-using Business.Dto;
+﻿using Business.Dto;
+using Business.Interfaces;
 using System;
 
 namespace Api.LogLocations
@@ -8,8 +8,7 @@ namespace Api.LogLocations
     {
         public void Create(LogRequest request)
         {
-            // Tipo
-            Console.WriteLine(request.ToString());
+            // Tipo Console.WriteLine(request.ToString());
             // Tik paprastas .ToString() neveiks – reikės adapterio
         }
     }
